@@ -1,0 +1,138 @@
+\hypertarget{classSupervisor}{}\doxysection{Supervisor Class Reference}
+\label{classSupervisor}\index{Supervisor@{Supervisor}}
+
+
+Inheritance diagram for Supervisor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=148pt]{classSupervisor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Supervisor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=148pt]{classSupervisor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classSupervisor_a92483dc9a54904d79b46c6ec4efb3f54}{print}} ()
+\item 
+double \mbox{\hyperlink{classSupervisor_aa37daa89523c08b84ae8141299e036f8}{calculate\+Pay}} ()
+\item 
+\mbox{\hyperlink{classSupervisor_a9d7eafc36b5429092ba0f758bc7841c4}{Supervisor}} ()
+\item 
+\mbox{\hyperlink{classSupervisor_a02d9245744652deb20e9408001d6ed3b}{Supervisor}} (int ID, int years, double hourly\+Rate, float hours\+Worked, int num\+Supervised)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSupervisor_af8b7097d8147c93a68d1f63c5b898797}\label{classSupervisor_af8b7097d8147c93a68d1f63c5b898797}} 
+int {\bfseries num\+Supervised}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSupervisor_a9d7eafc36b5429092ba0f758bc7841c4}\label{classSupervisor_a9d7eafc36b5429092ba0f758bc7841c4}} 
+\index{Supervisor@{Supervisor}!Supervisor@{Supervisor}}
+\index{Supervisor@{Supervisor}!Supervisor@{Supervisor}}
+\doxysubsubsection{\texorpdfstring{Supervisor()}{Supervisor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Supervisor\+::\+Supervisor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The constructor used to import all necessary variables
+
+\begin{DoxyPrecond}{Precondition}
+contains all necessary variables created in \mbox{\hyperlink{Employee_8h}{Employee.\+h}} and \mbox{\hyperlink{Supervisor_8h}{Supervisor.\+h}} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+All of the variables will be ready for use in \mbox{\hyperlink{Supervisor_8cpp}{Supervisor.\+cpp}} 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classSupervisor_a02d9245744652deb20e9408001d6ed3b}\label{classSupervisor_a02d9245744652deb20e9408001d6ed3b}} 
+\index{Supervisor@{Supervisor}!Supervisor@{Supervisor}}
+\index{Supervisor@{Supervisor}!Supervisor@{Supervisor}}
+\doxysubsubsection{\texorpdfstring{Supervisor()}{Supervisor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Supervisor\+::\+Supervisor (\begin{DoxyParamCaption}\item[{int}]{ID,  }\item[{int}]{years,  }\item[{double}]{hourly\+Rate,  }\item[{float}]{hours\+Worked,  }\item[{int}]{num\+Supervised }\end{DoxyParamCaption})}
+
+Imports information regarding the listed variables
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & ID the supervisor\textquotesingle{}s ID number \\
+\hline
+{\em int} & years the number of years worked \\
+\hline
+{\em double} & hourly\+Rate the amount of money made per hour \\
+\hline
+{\em float} & hours\+Worked how many hours the supervisor worked \\
+\hline
+{\em int} & num\+Supervised the number of employees supervised \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+needs inputs for ID, years, hourly\+Rate and hours\+Worked and num\+Supervised 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+does not return any values 
+\end{DoxyReturn}
+\begin{DoxyPostcond}{Postcondition}
+reads in all necessary variables so they can be used in other functions in \mbox{\hyperlink{Supervisor_8cpp}{Supervisor.\+cpp}} 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSupervisor_aa37daa89523c08b84ae8141299e036f8}\label{classSupervisor_aa37daa89523c08b84ae8141299e036f8}} 
+\index{Supervisor@{Supervisor}!calculatePay@{calculatePay}}
+\index{calculatePay@{calculatePay}!Supervisor@{Supervisor}}
+\doxysubsubsection{\texorpdfstring{calculatePay()}{calculatePay()}}
+{\footnotesize\ttfamily double Supervisor\+::calculate\+Pay (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+A slightly different version of the calculate\+Pay equation, including a 1\% bonus for every employee
+
+\begin{DoxyPrecond}{Precondition}
+Requires hourly\+Rate, hours\+Worked and num\+Supervised 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+returns a modified calced\+Pay variable 
+\end{DoxyReturn}
+\begin{DoxyPostcond}{Postcondition}
+calced\+Pay has been assigned a value, no other values have changed. 
+\end{DoxyPostcond}
+
+
+Reimplemented from \mbox{\hyperlink{classEmployee_a01c2c44e15434237db28832f6972e960}{Employee}}.
+
+\mbox{\Hypertarget{classSupervisor_a92483dc9a54904d79b46c6ec4efb3f54}\label{classSupervisor_a92483dc9a54904d79b46c6ec4efb3f54}} 
+\index{Supervisor@{Supervisor}!print@{print}}
+\index{print@{print}!Supervisor@{Supervisor}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Supervisor\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+used to print everything exclusive to the supervisor
+
+\begin{DoxyPrecond}{Precondition}
+Called in run\+Employee\+Tests in main 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+Void function, doesn\textquotesingle{}t return any values 
+\end{DoxyReturn}
+\begin{DoxyPostcond}{Postcondition}
+No values have changed as a result of this function, only contains print statements 
+\end{DoxyPostcond}
+
+
+Reimplemented from \mbox{\hyperlink{classEmployee_a79556ad700627dba88049f487a34a762}{Employee}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Supervisor_8h}{Supervisor.\+h}}\item 
+\mbox{\hyperlink{Supervisor_8cpp}{Supervisor.\+cpp}}\end{DoxyCompactItemize}
